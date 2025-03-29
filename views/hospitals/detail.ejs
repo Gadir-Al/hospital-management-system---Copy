@@ -1,0 +1,152 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <%- include('../partials/header') %>
+    
+    <div class="hospital-detail">
+      <div class="back-link">
+        <a href="/hospitals"><i class="fas fa-arrow-left"></i> Back to hospitals</a>
+      </div>
+      
+      <div class="hospital-header">
+        <h1><%= hospital.name %></h1>
+        <div class="rating">
+          <% for(let i = 0; i < 5; i++) { %>
+            <% if (i < Math.floor(hospital.rating)) { %>
+              <i class="fas fa-star"></i>
+            <% } else if (i < hospital.rating && hospital.rating % 1 !== 0) { %>
+              <i class="fas fa-star-half-alt"></i>
+            <% } else { %>
+              <i class="far fa-star"></i>
+            <% } %>
+          <% } %>
+          <span>(<%= hospital.rating %>)</span>
+        </div>
+      </div>
+      
+      <div class="hospital-info">
+        <div class="info-section">
+          <h2>Contact Information</h2>
+          <p><i class="fas fa-map-marker-alt"></i> <%= hospital.address %></p>
+          <p><i class="fas fa-phone"></i> <%= hospital.phone %></p>
+          <% if (hospital.email) { %>
+            <p><i class="fas fa-envelope"></i> <%= hospital.email %></p>
+          <% } %>
+          <% if (hospital.website) { %>
+            <p><i class="fas fa-globe"></i> <a href="<%= hospital.website %>" target="_blank">Visit Website</a></p>
+          <% } %>
+        </div>
+        
+        <div class="info-section">
+          <h2>Bed Availability</h2>
+          <div class="bed-info">
+            <div class="bed-category">
+              <h3>Regular Beds</h3>
+              <div class="bed-counts">
+                <div class="bed-count">
+                  <span class="count"><%= hospital.beds.available %></span>
+                  <span class="label">Available</span>
+                </div>
+                <div class="bed-count">
+                  <span class="count"><%= hospital.beds.total %></span>
+                  <span class="label">Total</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="bed-category">
+              <h3>ICU Beds</h3>
+              <div class="bed-counts">
+                <div class="bed-count">
+                  <span class="count"><%= hospital.beds.icu.available %></span>
+                  <span class="label">Available</span>
+                </div>
+                <div class="bed-count">
+                  <span class="count"><%= hospital.beds.icu.total %></span>
+                  <span class="label">Total</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="info-section">
+          <h2>Blood Stock</h2>
+          <div class="blood-stock-grid">
+            <% hospital.bloodStock.forEach(stock => { %>
+              <div class="blood-type <%= stock.units > 0 ? 'available' : 'unavailable' %>">
+                <span class="blood-label"><%= stock.bloodType %></span>
+                <span class="units"><%= stock.units %> units</span>
+              </div>
+            <% }); %>
+          </div>
+        </div>
+        
+        <div class="info-section">
+          <h2>Doctors</h2>
+          <% if (hospital.doctors && hospital.doctors.length > 0) { %>
+            <div class="doctors-list">
+              <% hospital.doctors.forEach(doctor => { %>
+                <div class="doctor-card">
+                  <h3><%= doctor.name %></h3>
+                  <p class="specialization"><%= doctor.specialization %></p>
+                  
+                  <% if (doctor.availability && doctor.availability.length > 0) { %>
+                    <h4>Availability</h4>
+                    <ul class="availability-list">
+                      <% doctor.availability.forEach(slot => { %>
+                        <li>
+                          <span class="day"><%= slot.day %>:</span>
+                          <span class="time"><%= slot.startTime %> - <%= slot.endTime %></span>
+                        </li>
+                      <% }); %>
+                    </ul>
+                  <% } %>
+                </div>
+              <% }); %>
+            </div>
+          <% } else { %>
+            <p>No doctor information available.</p>
+          <% } %>
+        </div>
+        
+        <div class="info-section">
+          <h2>Location</h2>
+          <div id="hospitalMap" style="height: 300px; width: 100%; margin-top: 10px;"></div>
+        </div>
+      </div>
+    </div>
+    
+    <%- include('../partials/footer') %>
+  </div>
+  
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAN3rUAoOwvpzyRsVZBb31jr-jQBaanXuk&callback=initMap" async defer></script>
+  <script>
+    function initMap() {
+      const hospitalLocation = {
+        lat: <%= hospital.location.coordinates[1] %>,
+        lng: <%= hospital.location.coordinates[0] %>
+      };
+      
+      const map = new google.maps.Map(document.getElementById('hospitalMap'), {
+        zoom: 15,
+        center: hospitalLocation
+      });
+      
+      const marker = new google.maps.Marker({
+        position: hospitalLocation,
+        map: map,
+        title: '<%= hospital.name %>'
+      });
+    }
+  </script>
+</body>
+</html> -->

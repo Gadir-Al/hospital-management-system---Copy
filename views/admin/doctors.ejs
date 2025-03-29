@@ -1,0 +1,31 @@
+<%- include("../partials/header") %>
+<div class="container mt-5">
+    <h1>Manage Doctors</h1>
+    <form method="POST" action="/admin/doctors">
+        <div>
+            <label for="name">Doctor Name</label>
+            <input type="text" name="name" id="name" required>
+        </div>
+        <div>
+            <label for="specialty">Specialty</label>
+            <input type="text" name="specialty" id="specialty" required>
+        </div>
+        <div>
+            <label for="schedule">Schedule</label>
+            <input type="text" name="schedule" id="schedule" required>
+        </div>
+        <button type="submit">Add Doctor</button>
+    </form>
+    <h2>Existing Doctors</h2>
+    <ul>
+        <% doctors.forEach(doctor => { %>
+            <li>
+                <strong><%= doctor.name %></strong> - <%= doctor.specialty %>
+                <form method="POST" action="/admin/doctors/<%= doctor._id %>?_method=DELETE">
+                    <button type="submit">Delete</button>
+                </form>
+            </li>
+        <% }) %>
+    </ul>
+</div>
+<%- include("../partials/footer") %>

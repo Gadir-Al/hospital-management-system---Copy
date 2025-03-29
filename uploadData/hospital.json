@@ -1,0 +1,58 @@
+[
+    {
+      "name": "City General Hospital",
+      "address": "123 Main Street, Cityville",
+      "phone": "555-123-4567",
+      "opdSchedule": "Mon-Fri, 9AM-5PM",
+      "bloodStocks": [
+        { "type": "A+", "units": 10 },
+        { "type": "O-", "units": 5 }
+      ],
+      "icuBeds": true
+    },
+    {
+      "name": "HealthCare Hospital",
+      "address": "456 Elm Street, Townsville",
+      "phone": "555-987-6543",
+      "opdSchedule": "Mon-Sat, 8AM-4PM",
+      "bloodStocks": [
+        { "type": "B+", "units": 8 },
+        { "type": "AB-", "units": 2 }
+      ],
+      "icuBeds": false
+    },
+    {
+      "name": "Wellness Center Hospital",
+      "address": "789 Oak Street, Villagetown",
+      "phone": "555-456-7890",
+      "opdSchedule": "Mon-Fri, 7AM-3PM",
+      "bloodStocks": [
+        { "type": "O+", "units": 15 },
+        { "type": "A-", "units": 4 }
+      ],
+      "icuBeds": true
+    },
+    {
+      "name": "Metro Care Hospital",
+      "address": "101 Pine Avenue, Metrocity",
+      "phone": "555-321-6547",
+      "opdSchedule": "Mon-Sun, 9AM-9PM",
+      "bloodStocks": [
+        { "type": "AB+", "units": 6 },
+        { "type": "B-", "units": 3 }
+      ],
+      "icuBeds": true
+    },
+    {
+      "name": "Neighborhood Hospital",
+      "address": "234 Cedar Lane, Suburbia",
+      "phone": "555-654-3210",
+      "opdSchedule": "Tue-Sat, 10AM-6PM",
+      "bloodStocks": [
+        { "type": "A+", "units": 7 },
+        { "type": "O-", "units": 2 }
+      ],
+      "icuBeds": false
+    }
+  ]
+  

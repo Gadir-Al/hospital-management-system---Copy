@@ -1,0 +1,35 @@
+<%- include("../partials/header") %>
+<div class="container mt-5">
+    <h1>Manage Hospitals</h1>
+    <form method="POST" action="/admin/hospitals">
+        <div>
+            <label for="name">Hospital Name</label>
+            <input type="text" name="name" id="name" required>
+        </div>
+        <div>
+            <label for="location">Location</label>
+            <input type="text" name="location" id="location" required>
+        </div>
+        <div>
+            <label for="icuBeds">ICU Beds</label>
+            <input type="number" name="icuBeds" id="icuBeds" required>
+        </div>
+        <div>
+            <label for="bloodStock">Blood Stock</label>
+            <input type="number" name="bloodStock" id="bloodStock" required>
+        </div>
+        <button type="submit">Add Hospital</button>
+    </form>
+    <h2>Existing Hospitals</h2>
+    <ul>
+        <% hospitals.forEach(hospital => { %>
+            <li>
+                <strong><%= hospital.name %></strong> - <%= hospital.location %>
+                <form method="POST" action="/admin/hospitals/<%= hospital._id %>?_method=DELETE">
+                    <button type="submit">Delete</button>
+                </form>
+            </li>
+        <% }) %>
+    </ul>
+</div>
+<%- include("../partials/footer") %>

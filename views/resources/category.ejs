@@ -1,0 +1,29 @@
+
+  <title><%= title %></title>
+
+  <%- include('../partials/header') %>
+
+  <main class="container my-5">
+    <h1 class="text-center mb-4"><%= title %></h1>
+
+    <% if (resources.length > 0) { %>
+      <div class="row">
+        <% resources.forEach(resource => { %>
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <div class="card-body">
+                <h5 class="card-title"><%= resource.title %></h5>
+                <p class="card-text"><%= resource.content.substring(0, 100) %>...</p>
+                <a href="/resources/<%= resource._id %>" class="btn btn-info">Read More</a>
+              </div>
+            </div>
+          </div>
+        <% }) %>
+      </div>
+    <% } else { %>
+      <p class="text-center">No resources found in this category.</p>
+    <% } %>
+  </main>
+
+  <%- include('../partials/footer') %>
+

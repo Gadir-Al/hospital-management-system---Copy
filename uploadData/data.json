@@ -1,0 +1,255 @@
+[
+    {
+      "name": "Dr. John Doe",
+      "specialization": "Cardiologist",
+      "schedule": [
+        {
+          "date": "2025-04-01",
+          "timeSlots": ["10:00 AM", "11:00 AM", "12:00 PM"]
+        },
+        {
+          "date": "2025-04-02",
+          "timeSlots": ["9:00 AM", "1:00 PM", "3:00 PM"]
+        }
+      ]
+    },
+    {
+      "name": "Dr. Sarah Smith",
+      "specialization": "Dermatologist",
+      "schedule": [
+        {
+          "date": "2025-04-01",
+          "timeSlots": ["8:00 AM", "10:00 AM", "2:00 PM"]
+        },
+        {
+          "date": "2025-04-03",
+          "timeSlots": ["9:30 AM", "12:00 PM", "4:00 PM"]
+        }
+      ]
+    },
+    {
+      "name": "Dr. Emily Johnson",
+      "specialization": "Neurologist",
+      "schedule": [
+        {
+          "date": "2025-04-01",
+          "timeSlots": ["9:00 AM", "11:00 AM", "1:00 PM"]
+        },
+        {
+          "date": "2025-04-04",
+          "timeSlots": ["10:00 AM", "2:00 PM", "3:30 PM"]
+        }
+      ]
+    },
+    {
+      "name": "Dr. Michael Lee",
+      "specialization": "Orthopedic Surgeon",
+      "schedule": [
+        {
+          "date": "2025-04-02",
+          "timeSlots": ["9:30 AM", "12:00 PM", "3:00 PM"]
+        },
+        {
+          "date": "2025-04-05",
+          "timeSlots": ["8:00 AM", "11:30 AM", "1:30 PM"]
+        }
+      ]
+    },
+    {
+      "name": "Dr. Anna White",
+      "specialization": "Pediatrician",
+      "schedule": [
+        {
+          "date": "2025-04-03",
+          "timeSlots": ["10:00 AM", "1:00 PM", "3:00 PM"]
+        },
+        {
+          "date": "2025-04-06",
+          "timeSlots": ["9:00 AM", "12:30 PM", "4:00 PM"]
+        }
+      ]
+    },
+    {
+      "name": "Dr. David Brown",
+      "specialization": "Dentist",
+      "schedule": [
+        {
+          "date": "2025-04-01",
+          "timeSlots": ["8:30 AM", "10:00 AM", "1:00 PM"]
+        },
+        {
+          "date": "2025-04-03",
+          "timeSlots": ["9:00 AM", "11:00 AM", "3:00 PM"]
+        }
+      ]
+    },
+    {
+      "name": "Dr. Olivia Green",
+      "specialization": "Gastroenterologist",
+      "schedule": [
+        {
+          "date": "2025-04-02",
+          "timeSlots": ["10:30 AM", "12:30 PM", "2:00 PM"]
+        },
+        {
+          "date": "2025-04-04",
+          "timeSlots": ["9:00 AM", "1:30 PM", "3:30 PM"]
+        }
+      ]
+    },
+    {
+      "name": "Dr. James Miller",
+      "specialization": "Endocrinologist",
+      "schedule": [
+        {
+          "date": "2025-04-01",
+          "timeSlots": ["8:00 AM", "10:00 AM", "2:00 PM"]
+        },
+        {
+          "date": "2025-04-03",
+          "timeSlots": ["9:00 AM", "1:00 PM", "4:00 PM"]
+        }
+      ]
+    },
+    {
+      "name": "Dr. Sophia Adams",
+      "specialization": "Oncologist",
+      "schedule": [
+        {
+          "date": "2025-04-02",
+          "timeSlots": ["9:00 AM", "11:00 AM", "1:00 PM"]
+        },
+        {
+          "date": "2025-04-06",
+          "timeSlots": ["8:00 AM", "12:00 PM", "3:00 PM"]
+        }
+      ]
+    },
+    {
+      "name": "Dr. Daniel Harris",
+      "specialization": "Psychiatrist",
+      "schedule": [
+        {
+          "date": "2025-04-01",
+          "timeSlots": ["9:00 AM", "1:00 PM", "3:00 PM"]
+        },
+        {
+          "date": "2025-04-04",
+          "timeSlots": ["10:00 AM", "12:30 PM", "4:00 PM"]
+        }
+      ]
+    },
+    {
+      "name": "Dr. Isabella Clark",
+      "specialization": "Urologist",
+      "schedule": [
+        {
+          "date": "2025-04-01",
+          "timeSlots": ["9:30 AM", "11:30 AM", "2:00 PM"]
+        },
+        {
+          "date": "2025-04-05",
+          "timeSlots": ["10:00 AM", "1:00 PM", "4:00 PM"]
+        }
+      ]
+    },
+    {
+      "name": "Dr. Lucas Lewis",
+      "specialization": "Rheumatologist",
+      "schedule": [
+        {
+          "date": "2025-04-02",
+          "timeSlots": ["9:00 AM", "11:00 AM", "2:00 PM"]
+        },
+        {
+          "date": "2025-04-06",
+          "timeSlots": ["9:30 AM", "1:00 PM", "3:00 PM"]
+        }
+      ]
+    },
+    {
+      "name": "Dr. Lily Evans",
+      "specialization": "Obstetrician",
+      "schedule": [
+        {
+          "date": "2025-04-02",
+          "timeSlots": ["8:30 AM", "10:30 AM", "1:00 PM"]
+        },
+        {
+          "date": "2025-04-04",
+          "timeSlots": ["9:00 AM", "12:00 PM", "3:30 PM"]
+        }
+      ]
+    },
+    {
+      "name": "Dr. Benjamin Scott",
+      "specialization": "Hematologist",
+      "schedule": [
+        {
+          "date": "2025-04-03",
+          "timeSlots": ["10:00 AM", "1:00 PM", "3:00 PM"]
+        },
+        {
+          "date": "2025-04-05",
+          "timeSlots": ["8:30 AM", "12:30 PM", "4:00 PM"]
+        }
+      ]
+    },
+    {
+      "name": "Dr. Mia Turner",
+      "specialization": "Pulmonologist",
+      "schedule": [
+        {
+          "date": "2025-04-01",
+          "timeSlots": ["8:00 AM", "10:00 AM", "12:00 PM"]
+        },
+        {
+          "date": "2025-04-03",
+          "timeSlots": ["9:00 AM", "1:30 PM", "4:00 PM"]
+        }
+      ]
+    },
+    {
+      "name": "Dr. Henry Carter",
+      "specialization": "Nephrologist",
+      "schedule": [
+        {
+          "date": "2025-04-02",
+          "timeSlots": ["9:30 AM", "11:00 AM", "2:00 PM"]
+        },
+        {
+          "date": "2025-04-05",
+          "timeSlots": ["8:30 AM", "12:00 PM", "3:30 PM"]
+        }
+      ]
+    },
+    {
+      "name": "Dr. Jack Harris",
+      "specialization": "General Surgeon",
+      "schedule": [
+        {
+          "date": "2025-04-01",
+          "timeSlots": ["8:00 AM", "10:00 AM", "1:00 PM"]
+        },
+        {
+          "date": "2025-04-04",
+          "timeSlots": ["9:30 AM", "12:00 PM", "2:30 PM"]
+        }
+      ]
+    },
+    {
+      "name": "Dr. Charlotte Roberts",
+      "specialization": "Geriatrician",
+      "schedule": [
+        {
+          "date": "2025-04-02",
+          "timeSlots": ["9:00 AM", "11:00 AM", "1:30 PM"]
+        },
+        {
+          "date": "2025-04-06",
+          "timeSlots": ["10:00 AM", "1:00 PM", "4:00 PM"]
+        }
+      ]
+    }
+  ]
+  
